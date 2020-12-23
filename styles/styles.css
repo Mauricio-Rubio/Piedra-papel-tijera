@@ -87,3 +87,8 @@ ul li a{
 .container .row {
     font-family: 'Roboto', sans-serif;
 }
+
+.col-sm .imagen-opciones{
+     -webkit-transform:scale(1.3);transform:scale(1.3);
+    overflow:hidden;
+}

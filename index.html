@@ -19,7 +19,7 @@
 
 <body>
   <div class="card">
-    <div class="card-nav">
+    <div class="card-nav" id="card-navbar">
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#card-description"> <img src="assets/RGMORG-logo.png" class="RGBORG-logo"
             width="100%" height="100%" alt=""></a>
@@ -31,18 +31,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto ml-auto text-center">
             <li class="nav-item active">
-              <a class="nav-link" href="#card-description">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#card-navbar">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#card-informacion">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contacto</a>
+              <a class="nav-link disabled" href="#card-footer">Contacto</a>
             </li>
           </ul>
           <div>
             <div class="d-flex flex-row justify-content-center">
-              <a href="#" class="btn btn-outline-danger mr-2">Y</a>
+              <a href="https://github.com/Mauricio-Rubio" target="_blank" class="btn btn-outline-light mr-2">G</a>
               <a href="#" class="btn btn-outline-primary ">F</a>
             </div>
           </div>
@@ -53,26 +53,26 @@
         </div>
       </nav>
     </div>
-    <div class="card-description">
+    <div class="card-description" id="card-description">
       <div class="titulo">
         <h2>¿Sabías que Piedra, Papel o Tijera, es un juego de origen chino?</h2>
       </div>
     </div>
-    <div class="card-main">
+    <div class="card-main" id="card-main">
       <div class="container">
         <div class="row row-opciones">
           <div class="col-sm">
-            <div class="imagen" onclick="obtenerValor(0); ">
+            <div class="imagen imagen-opciones" onclick="obtenerValor(0); ">
               <img src="assets/maloik.svg" width="100%" height="100%" alt=""><a href="#" ></a>
             </div>
           </div>
           <div class="col-sm">
-            <div class="imagen" onclick="obtenerValor(1);">
+            <div class="imagen imagen-opciones" onclick="obtenerValor(1);">
               <img src="assets/paper.svg" width="100%" height="100%" alt="">
             </div>
           </div>
           <div class="col-sm">
-            <div class="imagen" onclick="obtenerValor(2);">
+            <div class="imagen imagen-opciones" onclick="obtenerValor(2);">
               <img src="assets/scissors.svg" width="100%" height="100%" alt="">
             </div>
           </div>
@@ -124,7 +124,7 @@
         
       </div>
     </div>
-    <div class="card-informacion">
+    <div class="card-informacion" id="card-informacion">
       <div class="container">
         <div class="row">
           <div class="col-sm">
@@ -149,14 +149,14 @@
         </div>
       </div>
     </div>
-    <footer class="card-footer page-footer bg-danger">
+    <footer class="card-footer page-footer bg-danger" id="card-footer">
       <div class="bg-danger">
         <div class="container">
           <div class="row py-4 d-flex align-items-center">
             <div class="col-md-12 text-center">
-              <a href="#" class="btn btn-outline-primary ">F</a>
-              <a href="#" class="btn btn-outline-info ">T</a>
-              <a href="#" class="btn btn-outline-dark ">G</a>
+              <a href="https://www.facebook.com/mau.rh.33" target="_blank" class="btn btn-outline-primary ">F</a>
+              <a href="https://twitter.com/Maurici18904461" target="_blank" class="btn btn-outline-info ">T</a>
+              <a href="https://github.com/Mauricio-Rubio" target="_blank" class="btn btn-outline-dark ">G</a>
             </div>
           </div>
         </div>
@@ -167,9 +167,7 @@
         <div class="col-md-3 mx-auto mb-4">
           <h6 class="text-uppercase font-weight-bold">Quienes somos</h6>
           <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
-          <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, animi. Accusantium ullam
-            nesciunt temporibus cupiditate architecto. Enim tenetur nam sint eveniet, tempora modi porro deserunt
-            facilis expedita praesentium perferendis iure?</p>
+          <p class="mt-2">RGBORG es una empresa <br> 100% mexicana&#9996 dedicada <br>  al desarrollo de juegos <br>   tradicionales con el<br>   objetivo de que no <br>   sean olvidados </p>
         </div>
         <div class="col-md-2 mx-auto mb-4">
           <h6 class="text-uppercase font-weight-bold">Nuestros Juegos</h6>
@@ -183,9 +181,9 @@
           <h6 class="text-uppercase font-weight-bold">Links</h6>
           <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
           <ul class="list-unstyled">
-            <li class="my-2"><a href="#">Inicio</a></li>
-            <li class="my-2"><a href="#">¿Jugamos?</a></li>
-            <li class="my-2"><a href="#">Historia</a></li>
+            <li class="my-2"><a href="#card-navbar">Inicio</a></li>
+            <li class="my-2"><a href="#card-description">¿Jugamos?</a></li>
+            <li class="my-2"><a href="#card-informacion">Historia</a></li>
             <li class="my-2"><a href="#">Contacto</a></li>
           </ul>
         </div>
@@ -194,7 +192,7 @@
           <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
           <ul class="list-unstyled">
             <li class="my-2"><a href="">(52+) 55-83-43-24-24</a></li>
-            <li class="my-2"><a href="">Github</a></li>
+            <li class="my-2"><a href="https://github.com/Mauricio-Rubio" target="_blank">Github</a></li>
             <li class="my-2"><a href="">mauricio.rubio.haro@gmail.com</a></li>
 
           </ul>
@@ -203,7 +201,7 @@
     </div>
 
     <script src="js/juego.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
