@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/responsive-media.css">
   <link rel="shortcut icon" href="assets/RGMORG-logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <title>Piedra papel o tijera</title>
 </head>
 
@@ -60,21 +62,22 @@
       <div class="container">
         <div class="row row-opciones">
           <div class="col-sm">
-            <div class="imagen">
-              <img src="assets/maloik.svg" width="100%" height="100%" alt=""><a href="#"></a>
+            <div class="imagen" onclick="obtenerValor(0); ">
+              <img src="assets/maloik.svg" width="100%" height="100%" alt=""><a href="#" ></a>
             </div>
           </div>
           <div class="col-sm">
-            <div class="imagen">
+            <div class="imagen" onclick="obtenerValor(1);">
               <img src="assets/paper.svg" width="100%" height="100%" alt="">
             </div>
           </div>
           <div class="col-sm">
-            <div class="imagen">
+            <div class="imagen" onclick="obtenerValor(2);">
               <img src="assets/scissors.svg" width="100%" height="100%" alt="">
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <div class="card-puntos">
@@ -96,6 +99,29 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="puntaje" id="tus_puntos">
+              0
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="puntaje" id="empates">
+              0
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="puntaje" id="ia_puntos">
+              0
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button type="button" class="btn btn-danger" onclick="empezar(); maquinaGenerador();">Comenzar</button>
+          </div>
+        </div>
+        
       </div>
     </div>
     <div class="card-informacion">
@@ -149,18 +175,18 @@
           <h6 class="text-uppercase font-weight-bold">Nuestros Juegos</h6>
           <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
           <ul class="list-unstyled">
-            <li class="my-2"><a href="">Piedra, papel, tijera</a></li>
-            <li class="my-2"><a href="">Simon dice</a></li>
+            <li><a href="#">Piedra, papel, tijera</a></li>
+            <li><a href="#">Simon dice</a></li>
           </ul>
         </div>
         <div class="col-md-2 mx-auto mb-4">
           <h6 class="text-uppercase font-weight-bold">Links</h6>
           <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
           <ul class="list-unstyled">
-            <li class="my-2"><a href="">Inicio</a></li>
-            <li class="my-2"><a href="">¿Jugamos?</a></li>
-            <li class="my-2"><a href="">Historia</a></li>
-            <li class="my-2"><a href="">Contacto</a></li>
+            <li class="my-2"><a href="#">Inicio</a></li>
+            <li class="my-2"><a href="#">¿Jugamos?</a></li>
+            <li class="my-2"><a href="#">Historia</a></li>
+            <li class="my-2"><a href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="col-md-2 mx-auto mb-4">
@@ -170,24 +196,25 @@
             <li class="my-2"><a href="">(52+) 55-83-43-24-24</a></li>
             <li class="my-2"><a href="">Github</a></li>
             <li class="my-2"><a href="">mauricio.rubio.haro@gmail.com</a></li>
-           
+
           </ul>
         </div>
       </div>
+    </div>
 
-<script src="js/juego.js"></script>
+    <script src="js/juego.js"></script>
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
