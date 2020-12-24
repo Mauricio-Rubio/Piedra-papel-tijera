@@ -92,3 +92,10 @@ ul li a{
      -webkit-transform:scale(1.3);transform:scale(1.3);
     overflow:hidden;
 }
+.imagen-opciones img{
+    cursor: pointer;
+}
+.imagen-opciones img:hover{
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}

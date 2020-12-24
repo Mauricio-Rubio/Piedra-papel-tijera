@@ -34,12 +34,8 @@ function empezar() {
             text: 'Inténtalo de nuevo',
             width: 600,
             padding: '3em',
-            background: '#fff url(/images/trees.png)',
             backdrop: `
               rgba(240,173,78,0.5)
-              url("/images/nyan-cat.gif")
-              left top
-              no-repeat
             `
           })
     }
@@ -51,12 +47,8 @@ function empezar() {
             text: 'Esfuérzate más',
             width: 600,
             padding: '3em',
-            background: '#fff url(/images/trees.png)',
             backdrop: `
               rgba(213,130,138, 0.5)
-              url("/images/nyan-cat.gif")
-              left top
-              no-repeat
             `
           })
     }
@@ -68,12 +60,8 @@ function empezar() {
             text: 'Sigue así',
             width: 600,
             padding: '3em',
-            background: '#fff url(/images/trees.png)',
             backdrop: `
               rgba(0,0,123,0.4)
-              url("/images/nyan-cat.gif")
-              left top
-              no-repeat
             `
           })
     }
